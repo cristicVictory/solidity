@@ -110,6 +110,8 @@ void MemoryItem::storeValue(Type const& _sourceType, SourceLocation const&, bool
 			solAssert(m_dataType->calldataEncodedSize(false) == 1, "Invalid non-padded type.");
 			if (m_dataType->category() == Type::Category::FixedBytes)
 				m_context << u256(0) << Instruction::BYTE;
+			if (m_dataType->category() == Type::Category::Bool)
+				m_context << Instruction::ISZERO << Instruction::ISZERO;
 			m_context << Instruction::SWAP1 << Instruction::MSTORE8;
 		}
 		else
