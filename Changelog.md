@@ -1,3 +1,8 @@
+### 0.4.7 (not yet released)
+
+Bugfixes:
+* Code generator: higher bits in a boolean argument are ignored.
+
 ### 0.4.6 (2016-11-22)
 
 Bugfixes:
