@@ -1,3 +1,8 @@
+### 0.4.7 (unreleased)
+
+Features:
+ * Optimizer: Some dead code elimination.
+
 ### 0.4.6 (2016-11-22)
 
 Bugfixes:
