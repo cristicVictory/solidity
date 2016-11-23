@@ -1,3 +1,8 @@
+### 0.4.7 (unreleased)
+
+Features:
+ * Code generator: Inject the keccak256 hash of a metadata file into the bytecode.
+
 ### 0.4.6 (2016-11-22)
 
 Bugfixes:
